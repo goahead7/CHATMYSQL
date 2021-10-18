@@ -1,0 +1,13 @@
+{% extends "index.twig" %}
+{% block title %}CHAT{% endblock %}
+{% block content %}
+    <h1>CHAT</h1>
+
+    <div id="CHAT">
+        {% for allmes in allmess %}
+            <div class="allmes">
+                {{allmes.LOGIN}}. "<em>{{allmes.TXT}}"</em> <em>{{allmes.DATE}}"</em>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
