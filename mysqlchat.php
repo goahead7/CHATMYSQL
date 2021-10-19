@@ -1,4 +1,7 @@
 <?php
+require_once 'composer.phar/vendor/autoload.php';
+
+Twig_Autoloader::reqister();
 $loader = new \Twig\Loader\FilesystemLoader('templates');
 $twig = new \Twig\Enviroment($loader);
 
